@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROLLS WEB SITE</title>
+    <link rel="stylesheet" href="css/glavnaya-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="glavnaya.html" class="header__logo">
+                <h1>ROLLS.web</h1>
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#yak1" class="header__nav-link">Роллы</a></li>
+                    <li class="header__nav-item"><a href="#yak2" class="header__nav-link">Акции</a></li>
+                    <li class="header__nav-item"><a href="#yak3" class="header__nav-link">Контакты</a></li>
+                    <li class="header__nav-item"><a href="#yak4" class="header__nav-link">Вопросы</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__contact">
+                <a href="tel:+79991234567" class="header__phone">+7 (999) 533-22-61</a>
+            </div>
+
+            <button class="header__burger" aria-label="Открыть меню">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#yak1" class="mobile-menu__link">Роллы</a></li>
+                <li class="mobile-menu__item"><a href="#yak2" class="mobile-menu__link">Акции</a></li>
+                <li class="mobile-menu__item"><a href="#yak3" class="mobile-menu__link">Контакты</a></li>
+                <li class="mobile-menu__item"><a href="#yak4" class="mobile-menu__link">Вопросы</a></li>
+            </ul>
+        </nav>
+    </div>
+<main>
+                                     <!-- ВЕРХНИЙ БАНЕР -->
+
+ <section class="bannerSection">
+        <div class="bannerSection__overlay"></div>
+        <div class="bannerSection__content">
+            <h1 class="bannerSection__title">
+                Японская Кухня
+            </h1>
+            <p class="bannerSection__text">
+                Вкуснейшие роллы и суши с доставкой по Касспийску!
+            </p>
+        </div>
+    </section>
+
+                                       <!-- ВИДЫ РОЛЛОВ -->
+
+    <section  id="yak1" class="tovarSection">
+        <h1  class="zagrol">Роллы</h1>
+        <div class="tovarSection__container">
+            <!-- Товар 1 -->
+            <div  class="tovarCard" data-tovar-id="1">
+                <img src="img/бешеный лосось.jpg" alt="Товар 1" class="tovarCard__image">
+                <h3 class="tovarCard__name">Бешеный лосось</h3>
+                <p class="tovarCard__description">Состав: Филадельфия, лосось, кунжут белый, черный, икра тобика, краб,соус унаги</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">450 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+
+            <!-- Товар 2 -->
+            <div class="tovarCard" data-tovar-id="2">
+                <img src="img/горячий шик.jpg" alt="Товар 2" class="tovarCard__image">
+                <h3 class="tovarCard__name">Горячий шик</h3>
+                <p class="tovarCard__description">Состав: Нор, сыр Филадельфия, огурцы, лосось, сливочный соус,унаги.</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">450 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+            <!-- Товар 3 -->
+            <div class="tovarCard" data-tovar-id="3">
+                <img src="img/ойси.jpg" alt="Товар 1" class="tovarCard__image">
+                <h3 class="tovarCard__name">Ойси</h3>
+                <p class="tovarCard__description">Состав: Нори, рис, сыр Филадельфия ,креветки ,огурцы, лосось, соусы спайс, унаги, икра тобика.</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">460 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+
+            <!-- Товар 4 -->
+            <div class="tovarCard" data-tovar-id="4">
+                <img src="img/стамбульская ночь.jpg" alt="Товар 2" class="tovarCard__image">
+                <h3 class="tovarCard__name">Ролл Стамбульская ночь</h3>
+                <p class="tovarCard__description">Состав: Нори,рис,сыр Филадельфия,авокадо,лосось,икра тобика, кунжут черный .</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">450 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+            <!-- Товар 5 -->
+            <div class="tovarCard" data-tovar-id="5">
+                <img src="img/япоша.jpg" alt="Товар 1" class="tovarCard__image">
+                <h3 class="tovarCard__name">Горячий Ролл Япоша </h3>
+                <p class="tovarCard__description">Состав: Нори, рис, сыр Филадельфия, авокадо, лосось, ореховый соус.</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">450 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+
+            <!-- Товар 6 -->
+            <div class="tovarCard" data-tovar-id="6">
+                <img src="img/Хатате.jpg" alt="Товар 7" class="tovarCard__image">
+                <h3 class="tovarCard__name">Хатате </h3>
+                <p class="tovarCard__description">Состав: Нори, рис, сыр Филадельфия, огурцы, мясо краба, спайс, унаги.</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">370 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+            <!-- Товар 7 -->
+            <div class="tovarCard" data-tovar-id="7">
+                <img src="img/овощной.jpg" alt="Товар 1" class="tovarCard__image">
+                <h3 class="tovarCard__name">Ролл овощной </h3>
+                <p class="tovarCard__description">Состав: Нори, рис, сыр Филадельфия, авокадо, огурцы, перец цветной, лист салата.</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">370 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+
+            <!-- Товар 8 -->
+            <div class="tovarCard" data-tovar-id="8">
+                <img src="img/филадельфия шик.jpg" alt="Товар 2" class="tovarCard__image">
+                <h3 class="tovarCard__name">Филадельфия шик</h3>
+                <p class="tovarCard__description">Состав: рис, нори, сыр Филадельфия, огурцы, авокадо, майонез, унаги, икра тобика</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">370 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+            <!-- Товар 9 -->
+            <div class="tovarCard" data-tovar-id="9">
+                <img src="img/Филадельфия класик.jpg" alt="Товар 1" class="tovarCard__image">
+                <h3 class="tovarCard__name">Ролл Классическая Филадельфия</h3>
+                <p class="tovarCard__description">Состав: рис, нори, сыр Филадельфия, лосось.</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">450 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+
+            <!-- Товар 10 -->
+            <div class="tovarCard" data-tovar-id="10">
+                <img src="img/Горячий.jpg" alt="Товар 2" class="tovarCard__image">
+                <h3 class="tovarCard__name">Горячий ролл Цезарь с курицей</h3>
+                <p class="tovarCard__description">Состав: Нори, рис, курица, соус цезарь, пармезан, помидор, лист салата.</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">370 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+            <!-- Товар 11 -->
+            <div class="tovarCard" data-tovar-id="11">
+                <img src="img/Горячий Цезарь креветки.jpg" alt="Товар 1" class="tovarCard__image">
+                <h3 class="tovarCard__name">Горячий ролл Цезарь с креветками</h3>
+                <p class="tovarCard__description">Состав: :Нори, рис, сыр Филадельфия, сыр пармезан, соус кимчи,  креветки, огурцы, лист салата. </p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">370 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+
+            <!-- Товар 12 -->
+            <div class="tovarCard" data-tovar-id="12">
+                <img src="img/в кунжуте запеченый.jpg" alt="Товар 2" class="tovarCard__image">
+                <h3 class="tovarCard__name">Ролл Запечёный в белом кунжуте</h3>
+                <p class="tovarCard__description">Состав: рис, нори, сыр Филадельфия, креветки в кляре, огурцы, кунжут белый, спайс соус. </p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">400 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+            <!-- Товар 13 -->
+            <div class="tovarCard" data-tovar-id="13">
+                <img src="img/Грин.jpg" alt="Товар 1" class="tovarCard__image">
+                <h3 class="tovarCard__name">Ролл Гринн</h3>
+                <p class="tovarCard__description">Состав: рис, нори, сыр Филадельфия, курица, огурцы, спайс соус, укроп.</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">370 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+
+            <!-- Товар 14 -->
+            <div class="tovarCard" data-tovar-id="14">
+                <img src="img/легкий с курицей.jpg" alt="Товар 2" class="tovarCard__image">
+                <h3 class="tovarCard__name">Ролл лёгкий с курицей</h3>
+                <p class="tovarCard__description">Состав: рисовая бумага, сыр Филадельфия, лист салата, курица,соус цезарь, соус спайс, огурцы, помидоры, авокадо.</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">370 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+            <!-- Товар 15 -->
+            <div class="tovarCard" data-tovar-id="15">
+                <img src="img/нежный.jpg" alt="Товар 1" class="tovarCard__image">
+                <h3 class="tovarCard__name">Ролл нежный</h3>
+                <p class="tovarCard__description">Состав: рисовая бумага, рис,сыр Филадельфия,лист салата,руккола,базилик (микс),креветки.</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">400 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+
+            <!-- Товар 16 -->
+            <div class="tovarCard" data-tovar-id="16">
+                <img src="img/Нори с огурцом.jpg" alt="Товар 2" class="tovarCard__image">
+                <h3 class="tovarCard__name">Нори маки с огурцом</h3>
+                <p class="tovarCard__description">Состав: Нори, рис, кунжут белый, огурцы.</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">300 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+             <!-- Товар 17 -->
+            <div class="tovarCard" data-tovar-id="17">
+                <img src="img/Нори с семгой.jpg" alt="Товар 2" class="tovarCard__image">
+                <h3 class="tovarCard__name">Нори маки с сёмгой</h3>
+                <p class="tovarCard__description">Состав: Нори, рис, филе сёмги</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">300 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+             <!-- Товар 18  -->
+            <div class="tovarCard" data-tovar-id="18">
+                <img src="img/Кимпаб.jpg" alt="Товар 2" class="tovarCard__image">
+                <h3 class="tovarCard__name">Кимпаб</h3>
+                <p class="tovarCard__description">Состав: Нори, рис, лист салата,огурцы, перец цветной,острая морковь по корейски,омлет, мясо краба,лук зелёный,кимчи.</p>
+                <p class="tovarCard__quantity">8 шт.</p>
+                <p class="tovarCard__price">400 ₽</p>
+                <button class="tovarCard__orderButton">Заказать</button>
+            </div>
+            <!-- Добавить больше товаров (роллов) -->
+        </div>
+    </section>
+
+                                  <!-- Всплывающее окно (скрыто по умолчанию) -->
+
+    <div class="tovarModal" id="tovarModal">
+        <div class="tovarModal__content">
+            <button class="tovarModal__closeButton"><i class="fa fa-times"></i></button>
+            <div class="tovarModal__imageContainer">
+                <img src="" alt="" class="tovarModal__image">
+            </div>
+            <div class="tovarModal__details">
+                <h2 class="tovarModal__name"></h2>
+                <p class="tovarModal__description"></p>
+                <p class="tovarModal__quantity"></p>
+                <p class="tovarModal__price"></p>
+                <button class="tovarModal__addToCartButton">В корзину</button>
+            </div>
+        </div>
+    </div>
+                                          <!-- РАЗДЕЛ АКЦИИ -->
+
+    <section id="yak2" class="akciiSection">
+        <div class="akciiSection__header">
+            <h2 class="akciiSection__title">Акции</h2>
+            <p class="akciiSection__subtitle">Постоянные и сезонные акции со скидками %. Следите за обновлениями!</p>
+        </div>
+
+        <div class="akciiSection__slider">
+            <button class="akciiSection__arrow akciiSection__arrow--left" id="akciiPrevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="akciiSection__sliderWrapper">
+                <ul class="akciiSection__sliderList" id="akciiSliderList">
+                    <li class="akciiSection__slide" data-slide-index="0">
+                        <div class="akciiSection__akciiItem">
+                            <div class="akciiSection__imageContainer">
+                                <img src="img/3акция.jpg" alt="Акция 1" class="akciiSection__akciiImage">
+                            </div>
+                            <div class="akciiSection__akciiContent">
+                                <h3 class="akciiSection__akciiTitle">Бесплатная доставка при заказе от 2500 рублей!</h3>
+                                <p class="akciiSection__akciiDescription">Быстрая и бесплатная доставка прямо к вашему дому.</p>
+                                <a href="#" class="akciiSection__akciiLink">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="akciiSection__slide" data-slide-index="1">
+                        <div class="akciiSection__akciiItem">
+                            <div class="akciiSection__imageContainer">
+                                <img src="img/4акция.jpg" alt="Акция 2" class="akciiSection__akciiImage">
+                            </div>
+                            <div class="akciiSection__akciiContent">
+                                <h3 class="akciiSection__akciiTitle">Дополнительная порция ролл на ваш выбор!</h3>
+                                <p class="akciiSection__akciiDescription">Закажите 5 порций и получите 6-ю порцию в подарок!</p>
+                                <a href="#" class="akciiSection__akciiLink">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="akciiSection__slide" data-slide-index="2">
+                        <div class="akciiSection__akciiItem">
+                            <div class="akciiSection__imageContainer">
+                                <img src="img/1акция.jpg" alt="Акция 3" class="akciiSection__akciiImage">
+                            </div>
+                            <div class="akciiSection__akciiContent">
+                                <h3 class="akciiSection__akciiTitle">Скидка 5% на все роллы на ваше день рождение!</h3>
+                                <p class="akciiSection__akciiDescription">Чтобы получить скидку на день рождения, нужно заполнить анкету. Напишите нам в Telegram или на WhatsApp по номеру указаный в разделе контакты.</p>
+                                <a href="#" class="akciiSection__akciiLink">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="akciiSection__arrow akciiSection__arrow--right" id="akciiNextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+                                         <!-- Контакты -->
+
+    <section id="yak3" class="kontaktySection">
+        <div class="kontaktySection__header">
+            <h2 class="kontaktySection__title">Связаться с нами</h2>
+            <p class="kontaktySection__subtitle">Для заказа позвоните по номеру указанный ниже</p>
+        </div>
+
+        <div class="kontaktySection__info">
+            <div class="kontaktySection__kontaktyBlock kontaktySection__kontaktyBlock--phone">
+                <img src="https://cdn-icons-png.flaticon.com/128/4788/4788414.png" alt="Телефон" class="kontaktySection__kontaktyIcon">
+                <h3 class="kontaktySection__kontaktyBlockTitle">+7 (999) 533-22-61</h3>
+                <p class="kontaktySection__kontaktyBlockSubtitle">info@example.com</p>
+            </div>
+
+            <div class="kontaktySection__kontaktyBlock kontaktySection__kontaktyBlock--address">
+                <img src="https://cdn-icons-png.flaticon.com/128/1094/1094999.png" alt="Адрес" class="kontaktySection__kontaktyIcon">
+                <h3 class="kontaktySection__kontaktyBlockTitle">Откуда доставляется заказ</h3>
+                <p class="kontaktySection__kontaktyBlockSubtitle">Каспийск, Переулок Шамиля 31</p>
+            </div>
+
+             <div class="kontaktySection__kontaktyBlock kontaktySection__kontaktyBlock--hours">
+                <img src="https://cdn-icons-png.flaticon.com/128/149/149313.png" alt="Время работы" class="kontaktySection__kontaktyIcon">
+                <h3 class="kontaktySection__kontaktyBlockTitle">Время работы</h3>
+                <p class="kontaktySection__kontaktyBlockSubtitle">Пн-Пт: 9:00 - 18:00</p>
+                <p class="kontaktySection__kontaktyBlockSubtitle">Сб: 10:00 - 16:00</p>
+                <p class="kontaktySection__kontaktyBlockSubtitle">Вс: Выходной</p>
+            </div>
+        </div>
+    </section>
+
+                                         <!-- РАЗДЕЛ С ВОПРОСАМИ -->
+
+    <section id="yak4" class="voprosySection">
+        <div class="voprosySection__header">
+            <h2 class="voprosySection__title">Часто задаваемые вопросы</h2>
+            <p class="voprosySection__subtitle">Узнайте ответы на самые популярные вопросы.</p>
+        </div>
+
+        <div class="voprosySection__list">
+            <!-- Вопрос 1 -->
+            <div class="voprosySection__vopros" data-vopros-id="1">
+                <div class="voprosySection__voprosHeader">
+                    <span class="voprosySection__voprosText">Как сделать заказ?</span>
+                    <span class="voprosySection__voprosToggleIcon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="voprosySection__voprosAnswer">
+                    <p>Чтобы сделать заказ, вам нужно выбрать товары, добавить их в корзину и вам будет показана общая сумма вашего заказа,далее вам нужно позвонить нам по номеру и озвучить ваш заказ либо же написать нам в удобный для вас Месенджер (ссылки на них находяться в самом низу сайта).</p>
+                </div>
+            </div>
+
+            <!-- Вопрос 2 -->
+            <div class="voprosySection__vopros" data-vopros-id="2">
+                <div class="voprosySection__voprosHeader">
+                    <span class="voprosySection__voprosText">Какие способы оплаты доступны?</span>
+                    <span class="voprosySection__voprosToggleIcon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="voprosySection__voprosAnswer">
+                    <p>Мы принимаем оплату переводами по электронным кошелькам .</p>
+                </div>
+            </div>
+
+            <!-- Вопрос 3 -->
+            <div class="voprosySection__vopros" data-vopros-id="3">
+                <div class="voprosySection__voprosHeader">
+                    <span class="voprosySection__voprosText">Сколько стоит доставка?</span>
+                    <span class="voprosySection__voprosToggleIcon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="voprosySection__voprosAnswer">
+                    <p>Стоимость доставки зависит от вашего местоположения и суммы заказа. Подробную информацию можно узнать написав нам. Но при при заказе от 2500 рублей доставка бесплатная!</p>
+                </div>
+            </div>
+
+            <!-- Вопрос 4 -->
+            <div class="voprosySection__vopros" data-vopros-id="4">
+                <div class="voprosySection__voprosHeader">
+                    <span class="voprosySection__voprosText">Как быстро осуществляется доставка?</span>
+                    <span class="voprosySection__voprosToggleIcon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="voprosySection__voprosAnswer">
+                    <p>Обычно доставка занимает от 20 до 60 минут, в зависимости от вашего местонахождения.</p>
+                </div>
+            </div>
+
+            <!-- Вопрос 5 -->
+            <div class="voprosySection__vopros" data-vopros-id="5">
+                <div class="voprosySection__voprosHeader">
+                    <span class="voprosySection__voprosText">Как оставить отзыв?</span>
+                    <span class="voprosySection__voprosToggleIcon"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="voprosySection__voprosAnswer">
+                    <p>Вы можете сфотографировать полученый заказ и отправить нам его в WhatsApp или Telegram! Мы будем очень блогодарны если вы оставите отзыв <img class="cat" src="https://cdn-icons-png.flaticon.com/128/10736/10736493.png"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+                                         <!-- Корзина -->
+    <!-- Раздел корзины (якорь) -->
+    <section  class="cartSection" id="cartSection">
+        <h2>Корзина</h2>
+        <div class="cartSection__container" id="cartContainer">
+            <!-- Здесь будут отображаться товары в корзине -->
+        </div>
+    </section>
+
+                                         <!-- ПОДВАЛ -->
+
+ <footer class="podvalSection">
+        <div class="podvalSection__container">
+            <div class="podvalSection__brand">
+                <a href="glavnaya.html" class="podvalSection__brandLink">ROLLS.web</a>
+            </div>
+
+            <nav class="podvalSection__nav">
+                <ul class="podvalSection__navList">
+                    <li class="podvalSection__navItem"><a href="#yak1" class="podvalSection__navLink">Роллы</a></li>
+                    <li class="podvalSection__navItem"><a href="#yak1" class="podvalSection__navLink">Акции</a></li>
+                    <li class="podvalSection__navItem"><a href="#yak1" class="podvalSection__navLink">Контакты</a></li>
+                    <li class="podvalSection__navItem"><a href="#yak1" class="podvalSection__navLink">Вопросы</a></li>
+                    <li class="podvalSection__navItem"><a href="https://t.me/mugutdinovarolls" class="podvalSection__navLink" target="_blank">Отзывы</a></li>
+                </ul>
+            </nav>
+
+            <div class="podvalSection__social">
+                <p class="podvalSection__socialText">Свяжитесь с нами удобным для вас способом:</p>
+                <ul class="podvalSection__socialList">
+                    <li class="podvalSection__socialItem">
+                        <a href="https://wa.me/89993104949" target="_blank" class="podvalSection__socialLink">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li class="podvalSection__socialItem">
+                        <a href="https://t.me/@Kurbanoff0" target="_blank" class="podvalSection__socialLink">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+                                          <!-- Кнопка корзины -->
+
+    <button class="knopkaKorziny" id="knopkaKorziny">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="knopkaKorziny__count" id="knopkaKorzinyCount">0</span>
+    </button>
+
+
+
+    </main>
+
+    <script src="js/glavnaya-script.js"></script>
+</body>
+</html>
